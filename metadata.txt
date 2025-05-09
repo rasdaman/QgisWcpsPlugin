@@ -8,8 +8,8 @@ email=misev@rasdaman.com
 
 about=This plugin allows sending datacube queries as per OGC Web Coverage Processing Service (WCPS) to a server and displaying the results. WCPS allows zero-coding spatial and temporal analytics; see <a href="https://earthserver.eu">this tutorial</a>,  <a href="https://www.ogc.org/standard/wcps/">the standard</a>, and the <a href="https://myogc.org/go/coveragesDWG">OGC datacubes info page</a>.<br><br>A user guide for the plugin itself can be found <a href="https://doc.rasdaman.org/11_cheatsheets.html#wcps-qgis-plugin">here</a>.
 
-tracker=https://rasdaman.org/trac/
-repository=https://rasdaman.org/
+tracker=https://github.com/rasdaman/QgisWcpsPlugin/issues
+repository=https://github.com/rasdaman/QgisWcpsPlugin
 # End of mandatory metadata
 
 # Recommended items:
@@ -21,7 +21,7 @@ hasProcessingProvider=no
 # Tags are comma separated with spaces allowed
 tags=analytics,coverage,datacube,wcps,wcs,ogc,Web Coverage Processing Service,rasdaman,client
 
-homepage=https://doc.rasdaman.org/11_cheatsheets.html#wcps-qgis-plugin
+homepage=https://doc.rasdaman.org/11_cheatsheets.html#wcps-plugin
 category=Raster
 icon=icon.png
 # experimental flag
