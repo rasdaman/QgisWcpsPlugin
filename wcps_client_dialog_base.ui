@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wspc_clientDialogBase</class>
+ <widget class="QDialog" name="wspc_clientDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WSPC 1.1 Client</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_WCPSClient">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>641</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab_Serv">
+    <attribute name="title">
+     <string>Server</string>
+    </attribute>
+    <widget class="QPushButton" name="btnClose_Serv">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>410</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>611</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Server</string>
+     </property>
+     <widget class="QComboBox" name="cmbConnections_Serv">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>591</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnConnectServer_Serv">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnNew_Serv">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>70</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>New</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnEdit_Serv">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>70</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDelete_Serv">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>70</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Server Connections</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>601</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Log</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_Serv">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>161</y>
+       <width>621</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>611</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Authentication</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>501</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QCheckBox" name="cbInvert_Axis">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>611</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Flip axes</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="PCCoverage">
+    <attribute name="title">
+     <string>WCPS query editor</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>621</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>WCPS query</string>
+     </property>
+     <widget class="QPlainTextEdit" name="plainTextEdit_PC">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>601</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PC">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>410</y>
+       <width>111</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Submit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnClose_PC">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>410</y>
+       <width>111</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnLoad_Query">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>410</y>
+       <width>111</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Load Query</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="VisualQueryEditor">
+    <attribute name="title">
+     <string>Visual Query Editor</string>
+    </attribute>
+    <widget class="QPushButton" name="btnAddDatacube">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add datacube</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="lstDatacubes">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>611</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSetFilter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>231</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Set filter condition</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Selected datacubes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Result expression</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="ResultExpression">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>611</width>
+       <height>87</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ResultFormat">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>601</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Result format</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CustomFormatLine">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>601</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFormatParameters">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>150</y>
+       <width>231</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Format parameters</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEvaluate">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>430</y>
+       <width>121</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Evaluate</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDeleteDatacube">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>231</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete datacube</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Extra parameters</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CustomFormatLine_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>601</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_CoveragesList">
+    <attribute name="title">
+     <string>Available coverages</string>
+    </attribute>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>11</y>
+       <width>621</width>
+       <height>421</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

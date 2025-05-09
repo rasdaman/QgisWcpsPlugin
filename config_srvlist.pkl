@@ -1,0 +1,15 @@
+(dp0
+Vservers
+p1
+(lp2
+(lp3
+Vrasdaman-ows
+p4
+aVhttps://ows.rasdaman.org/rasdaman/ows
+p5
+aa(lp6
+Vrasdaman-ows-admin
+p7
+aVhttps://ows.rasdaman.org/rasdaman/ows
+p8
+aas.

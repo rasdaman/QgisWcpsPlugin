@@ -1,0 +1,50 @@
+[general]
+name=WCPS datacube query
+qgisMinimumVersion=3.0
+description=Query datacubes with WCPS and display results.
+version=4.2.0
+author=Bang Pham Huu, Dimitar Misev, Nikita Ivlev
+email=misev@rasdaman.com
+
+about=This plugin allows sending datacube queries as per OGC Web Coverage Processing Service (WCPS) to a server and displaying the results. WCPS allows zero-coding spatial and temporal analytics; see <a href="https://earthserver.eu">this tutorial</a>,  <a href="https://www.ogc.org/standard/wcps/">the standard</a>, and the <a href="https://myogc.org/go/coveragesDWG">OGC datacubes info page</a>.<br><br>A user guide for the plugin itself can be found <a href="https://doc.rasdaman.org/11_cheatsheets.html#wcps-qgis-plugin">here</a>.
+
+tracker=https://rasdaman.org/trac/
+repository=https://rasdaman.org/
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=analytics,coverage,datacube,wcps,wcs,ogc,Web Coverage Processing Service,rasdaman,client
+
+homepage=https://doc.rasdaman.org/11_cheatsheets.html#wcps-qgis-plugin
+category=Raster
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=Raster
+
+# If the plugin can run on QGIS Server.
+server=False
+
+
+changelog=
+      4.2.0
+        * Better quality icon with gears indicating the processing capabilities enabled by this plugin
+      4.1.0
+        * Fixed various bugs in Server / Visual Query Editor / WCPS Query Editor tabs
+        * Remade datacubes selection for generating FOR clause in Vistual Query Editor tab
+        * Improved GUI for Datacubes List tab
+        * Improved error messages handler      
+        * Enhanced GUI for setting extra parameters for encoding format and filtering condition (WHERE clause)
+        * Added tool tips to describe functionalities of buttons in GUI
+        * Saving output file with file extension corresponding to the MIME type of the processed output
